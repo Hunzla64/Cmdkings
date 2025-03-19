@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="Icon.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Comic Sans MS;
+            margin: 0;
+            padding: 0;
+            background: black;
+            color: lime;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 60%, transparent), black;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .login-container {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0px 40px lime;
+            width: 300px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: lime;
+            text-shadow: 0 2px 5px rgba(0, 255, 0, 0.5);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            color: lime;
+            background: black;
+            box-shadow: inset 0 2px 4px rgba(0, 255, 0, 0.5);
+        }
+
+        .form-group input:focus {
+            outline: none;
+            box-shadow: 0 0 10px lime;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 12px;
+            background: lime;
+            color: black;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0, 255, 0, 0.5);
+        }
+
+        .login-button:hover {
+            background: black;
+            color: lime;
+            box-shadow: 0 10px 20px rgba(0, 255, 0, 0.7);
+            transform: translateY(-3px);
+        }
+
+        .signup-link, .forgot-password {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .signup-link a, .forgot-password a {
+            color: lime;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .signup-link a:hover, .forgot-password a:hover {
+            color: white;
+        }
+
+        .bot {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 140px;
+            height: 40px;
+            background: black;
+            border: 3px solid lime;
+            color: lime;
+            border-radius: 50px;
+            transition: 0.9s;
+            box-shadow: 0px 0px 60px lime;
+        }
+
+        .bot:hover {
+            box-shadow: 0px 0px 80px lime;
+            border-radius: 1000px 50px;
+            border: 5px solid black;
+            background: lime;
+            color: black;
+            transition: 0.9s;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"><button class="bot">Go Back</button></a>
+    <div class="background"></div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form onsubmit="return handleLogin(event)">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+        <div class="signup-link">
+            Don't have an account? <a href="Sing up.html">Sign up</a>
+        </div>
+    </div>
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            console.log('Email:', email);
+            console.log('Password:', password);
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

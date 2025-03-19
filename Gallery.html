@@ -1,0 +1,143 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMD Kings (Gallery)</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Search.css">
+    <link rel="stylesheet" href="side nav.css">
+    <link rel="icon" href="icon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<div id="mysidenav" class="sidenav">
+    <ul></ul>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <img src="cmd.jpg" id="logo2">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="Gallery.html"><i class="fas fa-images"></i> Gallery</a>
+    <a href="News.html"><i class="fas fa-newspaper"></i> News</a>
+    <a href="About.html"><i class="fas fa-info-circle"></i> About</a>
+    <a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    <a href="login.HTML"><i class="fas fa-sign-in-alt"></i> Login</a>
+</div>
+
+<span style="font-size: 30px; cursor: pointer; color: lime; margin-left: 9px;" onclick="openNav()">&#9776;</span>
+<script>
+    // Function to open the side navigation
+    function openNav(){
+        document.getElementById("mysidenav").style.width = "150px";
+        document.getElementById("mysidenav").style.marginLeft = "0px";
+    }
+    // function to close the side navigation
+    function closeNav(){
+        document.getElementById("mysidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
+
+<div id="con">
+    <div id="header">CMD Kings <img src="Cmd.jpg" class="logo"></div>
+    <div id="nav">
+        <ul>
+            <li><a class="active" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="Gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+            <li><a href="News.html"><i class="fas fa-newspaper"></i> News</a></li>
+            <li><a href="About.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </div>
+
+<div id="page">
+<div class="img">
+<a href="#">
+<img src="images/a.jpg">
+</a>
+</div>
+<div class="img">
+<img src="images/amazon.jpg">
+</div>
+<div class="img">
+<img src="images/Android.jpg">
+</div><div class="img">
+<img src="images/BMW.jpg">
+</div><div class="img">
+<img src="images/Chatgpt.jpg">
+</div><div class="img">
+<img src="images/Free fire.jpg">
+</div><div class="img">
+<img src="images/Google.jpg">
+</div><div class="img">
+<img src="images/Hacker.jpg">
+</div><div class="img">
+<img src="images/Nike.jpg">
+</div><div class="img">
+<img src="images/Youtube.jpg">
+</div><div class="img">
+<img src="images/Insta.jpg">
+</div><div class="img">
+<img src="images/Tiktok.jpg">
+</div>
+</div>
+<div id="footer">
+    <div class="social">
+        Follow Us On:-
+        <img src="Images/Insta.jpg" onclick="openInsta()">
+        <script>
+            function openInsta() {
+                window.open('https://www.Instagram.com/@Cmdkings', '_blank');
+            }
+        </script>
+        
+        <img src="images/youtube.jpg" onclick="openyoutube()">
+        <script>
+            function openyoutube() {
+                window.open('https://www.youtube.com/@Cmdkings', '_blank');
+            }
+        </script>
+        
+        <img src="Images/tiktok.jpg" onclick="openTikTok()">
+        <script>
+            function openTikTok() {
+                window.open('https://www.Tiktok.com/@Cmdkings', '_blank');
+            }
+        </script>
+</div>
+    <div class="copy">
+    All Copy Right Reserved To <a href="#">CMD Kings</a> &copy; Design By:Hunzla
+    </div>
+    <button onClick="topFunction()" id="myBtn" title="Go To Top">
+        Top
+        
+    </button>
+    <script>
+        window.onscroll = Function()
+        
+        {scrollfunction()}; function scrollfunction(){
+        if(document.body.scrollTop>documentelement.scrollTop)
+    {
+        document.getElementById("mybtn").style.display="block";
+    }}
+    function topFunction() { document.body.scrollTop=0;
+        document.documentElement.scrollTop=0;
+    }
+    
+    </script>
+        
+    </div>
+    
+    <a href="pass.html">
+        <button id="logout">Exit</button></a>
+        <a url="www.tiktok.com">
+            <button onclick="openTikTok()" id="tiktok">
+                View on Tiktok 
+            </button>
+        </a>
+        
+        <script>
+            function openTikTok() {
+                window.open('https://www.tiktok.com/@Cmdkings', '_blank');
+            }
+        </script>        </body>
+        </html>

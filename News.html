@@ -1,0 +1,134 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMD Kings (News)</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="Search.css">
+    <link rel="stylesheet" href="side nav.css">
+    <link rel="stylesheet" href="Top.css">
+    <link rel="icon" href="icon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<div id="mysidenav" class="sidenav">
+    <ul></ul>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <img src="cmd.jpg" id="logo2">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="Gallery.html"><i class="fas fa-images"></i> Gallery</a>
+    <a href="News.html"><i class="fas fa-newspaper"></i> News</a>
+    <a href="About.html"><i class="fas fa-info-circle"></i> About</a>
+    <a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    <a href="login.HTML"><i class="fas fa-sign-in-alt"></i> Login</a>
+</div>
+
+<span style="font-size: 30px; cursor: pointer; color: lime; margin-left: 9px;" onclick="openNav()">&#9776;</span>
+<script>
+    // Function to open the side navigation
+    function openNav(){
+        document.getElementById("mysidenav").style.width = "150px";
+        document.getElementById("mysidenav").style.marginLeft = "0px";
+    }
+    // function to close the side navigation
+    function closeNav(){
+        document.getElementById("mysidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
+
+<div id="con">
+    <div id="header">CMD Kings <img src="Cmd.jpg" class="logo"></div>
+    <div id="nav">
+        <ul>
+            <li><a class="active" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="Gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+            <li><a href="News.html"><i class="fas fa-newspaper"></i> News</a></li>
+            <li><a href="About.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </div>
+<div id="page">
+<br><br><br>
+    <h2>All Biggest News Is Here!</h2><br>
+    <p class="news">
+                                         Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+            To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+            Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+            Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.
+            Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.
+            
+    </p><br><br>
+    <p class="news">Visit My TikTok Account And Follow Me</p>
+<a href="#">
+<button onclick="openTikTok()" id="visit-tiktok">Visit My Account</button>
+</a>
+<script>
+    function openTikTok() {
+        window.open('https://www.tiktok.com/@Cmdkings', '_blank');
+    }
+</script>
+</div>
+
+<div id="footer">
+<div class="social">
+    Follow Us On:-
+    <img src="Images/Insta.jpg" onclick="openInsta()">
+    <script>
+        function openInsta() {
+            window.open('https://www.Instagram.com/@Cmdkings', '_blank');
+        }
+    </script>
+    
+    <img src="images/youtube.jpg" onclick="openyoutube()">
+    <script>
+        function openyoutube() {
+            window.open('https://www.youtube.com/@Cmdkings', '_blank');
+        }
+    </script>
+    
+    <img src="Images/tiktok.jpg" onclick="openTikTok()">
+    <script>
+        function openTikTok() {
+            window.open('https://www.Tiktok.com/@Cmdkings', '_blank');
+        }
+    </script>
+</div>
+<div class="copy">
+All Copy Right Reserved To <a href="#">CMD Kings</a> &copy; Design By:Hunzla
+</div>
+<button onClick="topFunction()" id="myBtn" title="Go To Top">
+	Top
+	
+</button>
+<script>
+	window.onscroll = Function()
+	
+	{scrollfunction()}; function scrollfunction(){
+	if(document.body.scrollTop>documentelement.scrollTop)
+{
+	document.getElementById("mybtn").style.display="block";
+}}
+function topFunction() { document.body.scrollTop=0;
+	document.documentElement.scrollTop=0;
+}
+
+</script>
+	
+</div>
+
+<a href="pass.html">
+    <button id="logout">Exit</button></a>
+                <Button class="youtube" onclick="OpenMoreNews()">
+               More News
+            </Button>
+        
+        <script>
+            function OpenMoreNews() {
+                window.open('https://www.googlenews.com', '_blank');
+            }
+        </script> 
+        </body>
+	</html>

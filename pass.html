@@ -1,0 +1,139 @@
+<html>
+<head>
+    <title>Wellcome</title>
+    <link rel="icon" href="icon.jpg">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(lime, black);
+            animation: backgroundAnimation 5s infinite alternate;
+            overflow: hidden;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background: lime; }
+            100% { background: black; }
+        }
+
+        .login-container {
+            background-color: black;
+            padding: 40px;
+            border-radius: 50px;
+            box-shadow: 0px 0px 80px black;
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+            border: 4px solid lime;
+            animation: containerGlow 2s infinite alternate;
+        }
+
+        @keyframes containerGlow {
+            0% { box-shadow: 0px 0px 20px lime, 0px 0px 60px black; }
+            100% { box-shadow: 0px 0px 40px lime, 0px 0px 100px black; }
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: black;
+            margin-bottom: 20px;
+            text-shadow: 0px 0px 10px lime;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid lime;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 0px 10px lime;
+            color:black;
+            font-family: chiller;
+            font-size:20px;
+            
+        }
+
+        .input-field:hover {
+            box-shadow: 0px 0px 15px lime;
+            
+        }
+        .input-field:focus {
+            border-color: black;
+            outline: none;
+            box-shadow: 0px 0px 20px lime;
+        }
+
+        .login-btn {
+            background-color: black;
+            color: lime;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+            animation: buttonGlow 2s infinite alternate;
+            box-shadow: 0px 0px 10px lime;
+        }
+
+        .login-btn:hover {
+            background-color: lime;
+            color: black;
+            box-shadow: 0px 0px 20px black;
+        }
+
+        .login-btn:focus {
+            outline: none;
+        }
+
+        @keyframes buttonGlow {
+            0% { box-shadow: 0px 0px 10px lime; }
+            100% { box-shadow: 0px 0px 20px lime; }
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            display: none;
+            text-shadow: 0px 0px 10px red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <img class="Icon" src="cmd.jpg">
+        <h2>Login</h2>
+        <input type="text" class="input-field" id="username" placeholder="Enter your name" required>
+        <input type="password" class="input-field" id="password" placeholder="Enter your password" required>
+        <button class="login-btn" onclick="validateLogin()">Next</button>
+        <div id="error-message" class="error-message">Incorrect username or password.</div>
+    </div>
+
+    <script>
+        function validateLogin() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            const correctUsername = "kali";
+            const correctPassword = "kali";
+
+            if (username === correctUsername && password === correctPassword) {
+                window.location.href = "index.html";
+            } else {
+                document.getElementById("error-message").style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>

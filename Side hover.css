@@ -1,0 +1,16 @@
+#mysidenav a{
+position:absolute;
+left:-180px;
+transition:0.8s;
+padding:15px;
+width:120px;
+text-decoration:none;
+text-align:center;
+font-size:18px;
+color:LIME;
+border-radius:10px;
+margin-left:10px;
+padding-top: 10PX;
+text-shadow: 0px 0px 0px 90px lime;
+}
+#Mysidenav a:hover{left: 100px;}
